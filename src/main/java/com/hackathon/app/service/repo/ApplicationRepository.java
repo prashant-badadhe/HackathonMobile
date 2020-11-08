@@ -8,4 +8,5 @@ import com.hackathon.app.entity.Application;
 @Repository
 public interface ApplicationRepository extends JpaRepository<Application, Long>{
 
+	Application findByApplicationId(String applicationId);
 }

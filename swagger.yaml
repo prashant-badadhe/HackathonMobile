@@ -99,7 +99,6 @@ paths:
         - "write:pets"
         - "read:pets"
       deprecated: true
-  
 
   ApiResponse:
     type: "object"
