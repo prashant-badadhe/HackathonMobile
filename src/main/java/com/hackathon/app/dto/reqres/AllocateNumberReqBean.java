@@ -1,15 +1,24 @@
 package com.hackathon.app.dto.reqres;
 
+import javax.validation.constraints.NotNull;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class AllocateNumberReqBean {
 
-	long applicationId;
+	@JsonProperty("applicationId")
+	@NotNull
+	String applicationId;
+
+	@NotNull
+	@JsonProperty("mobileNumber")
 	long mobileNumber;
 
-	public long getApplicationId() {
+	public String getApplicationId() {
 		return applicationId;
 	}
 
-	public void setApplicationId(long applicationId) {
+	public void setApplicationId(String applicationId) {
 		this.applicationId = applicationId;
 	}
 
